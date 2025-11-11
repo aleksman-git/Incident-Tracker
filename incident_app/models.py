@@ -14,7 +14,7 @@ class Incident(models.Model):
         (status_closed, 'Закрыт'),
     ]
 
-    incident_id = models.BigIntegerField(verbose_name='ID инцидента', primary_key=True)
+    incident_id = models.BigAutoField(primary_key=True, verbose_name='ID инцидента')
     description = models.TextField(max_length=200, verbose_name='Описание')
     status = models.CharField(
         max_length=20,
