@@ -11,8 +11,8 @@ class Incident(models.Model):
 
     class Meta:
         db_table = 'incident'
-        verbose_name = 'Инцидент'
-        verbose_name_plural = 'Инциденты'
+        verbose_name = 'incident'
+        verbose_name_plural = 'incidents'
         ordering = ['-created_at']
 
 
