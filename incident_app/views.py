@@ -1,8 +1,8 @@
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework.response import Response
 from rest_framework import viewsets
-from models import Incident
-from serializers import IncidentSerializer
+from .models import Incident
+from .serializers import IncidentSerializer
 
 class IncidentView(viewsets.ModelViewSet):
     queryset = Incident.objects.all()

@@ -3,7 +3,7 @@ from django.db import models
 
 class Incident(models.Model):
 
-    title = models.CharField(max_length=200, verbose_name='Заголовок')
+    incident_id = models.BigIntegerField(verbose_name='ID инцидента', primary_key=True)
     description = models.TextField(max_length=200, verbose_name='Описание')
     status = models.CharField(max_length=20, verbose_name='Статус')
     source = models.CharField(max_length=20, verbose_name='Источник')
@@ -15,6 +15,8 @@ class Incident(models.Model):
         verbose_name_plural = 'incidents'
         ordering = ['-created_at']
 
-
     def __str__(self):
         return self.title
+
+
+
