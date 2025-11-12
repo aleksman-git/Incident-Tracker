@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'incident_app',                   # My app
+    'incident_app',
     'rest_framework_swagger',
     'rest_framework',
     'drf_yasg'

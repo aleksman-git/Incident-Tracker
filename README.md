@@ -21,3 +21,5 @@ python manage.py migrate
 ```sh
 python manage.py runserver
 ```
+REST API swagger будет доступна по адресу:
+http://127.0.0.1:8000/swagger/
