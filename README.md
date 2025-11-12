@@ -23,3 +23,15 @@ python manage.py runserver
 ```
 REST API swagger будет доступна по адресу:
 http://127.0.0.1:8000/swagger/
+
+Примеры работы:
+<img width="980" height="620" alt="image" src="https://github.com/user-attachments/assets/030f4a44-1a24-4b1a-8e71-16dd2eb9a7ca" />
+
+<img width="964" height="594" alt="image" src="https://github.com/user-attachments/assets/197e98ba-9a91-4ef9-b517-5f08de48cfab" />
+
+<img width="966" height="476" alt="image" src="https://github.com/user-attachments/assets/4d526f71-cb0c-4097-8d0d-9bc562df9132" />
+
+<img width="968" height="524" alt="image" src="https://github.com/user-attachments/assets/1bf00bdd-c3f5-43c3-a12b-0a7f8e35fabe" />
+
+
+
