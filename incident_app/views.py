@@ -23,9 +23,7 @@ class IncidentView(viewsets.ViewSet):
         ]
     )
     def list(self, request):
-        """
-        Получить список инцидентов (с фильтром по статусу)
-        """
+        # Получить список инцидентов (с фильтром по статусу)
         status_filter = request.query_params.get('status')
 
         if status_filter:
@@ -41,9 +39,7 @@ class IncidentView(viewsets.ViewSet):
         request_body=IncidentSerializer
     )
     def create(self, request):
-        """
-        Создать инцидент
-        """
+        # Создать инцидент
         serializer = IncidentSerializer(data=request.data)
         if serializer.is_valid():
             incident = serializer.save()
@@ -77,9 +73,7 @@ class IncidentView(viewsets.ViewSet):
     )
     @action(detail=True, methods=['patch'], url_path='update-status')
     def update_status(self, request, pk=None):
-        """
-        Обновить статус инцидента по id
-        """
+        # Обновить статус инцидента по id
         incident = get_object_or_404(Incident, pk=pk)
 
         # Обновляем только статус
